@@ -28,6 +28,9 @@ header {
     font-family: 'oswald';
     font-weight: 500;
     color: white;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    padding-top: 25px;
 }
 
 .subtitulosite {
@@ -77,6 +80,7 @@ a {
 
 .boxlinks {
     text-align: left;
+    padding-bottom: 10px;
 }
 
 h1, h2 {
@@ -106,4 +110,41 @@ img {
     text-align: center;
     background-color: #1A5A36;
     padding: 15px;
+}
+
+body {
+    margin: 0px;
+}
+
+.linkscorpo {
+    color: #298d54;
+    text-decoration: none;
+    padding: 0px;
+}
+
+.linkscorpo:hover {
+    color: #1d683e;
+    text-decoration: underline;
+}
+
+.linkscorpo:active {
+    color: #85E1AC;
+}
+
+.blocoverdin {
+    background-color: #C4EBD7;
+    border-radius: 10px;
+}
+
+.h1bloco {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: unset;
+    background-color: #2FA967;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.pbloco {
+    padding: 0px 10px;
+    padding-bottom: 10px;
 }
