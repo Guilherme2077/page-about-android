@@ -2,13 +2,13 @@
 
 @font-face {
     font-family: 'oswald';
-    src: url(fontes/oswald.otf);
+    src: url(fontes/oswald.otf) format(opentype);
     src: url(fontes/oswald.ttf);
 }
 
 @font-face {
     font-family: 'idroid';
-    src: url(fontes/idroid.otf);
+    src: url(fontes/idroid.otf) format(opentype);
     src: url(fontes/idroid.ttf);
 }
 
@@ -51,6 +51,10 @@ header {
 .linkscabecalho:hover {
     color: #85E1AC;
     text-decoration: underline;
+    background-color: #2c9459;
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: 1s;
 }
 
 .linkscabecalho:active {
@@ -64,13 +68,7 @@ main {
     margin: auto;
     background-color: white;
     max-width: 1000px;
-}
-
-footer {
-    text-align: center;
-    background-color: #1A5A36;
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.671);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 a {
@@ -106,12 +104,6 @@ img {
     margin: auto;
 }
 
-.video {
-    text-align: center;
-    background-color: #1A5A36;
-    padding: 15px;
-}
-
 body {
     margin: 0px;
 }
@@ -125,6 +117,9 @@ body {
 .linkscorpo:hover {
     color: #1d683e;
     text-decoration: underline;
+    background-color: #41eb8d;
+    border-radius: 5px;
+    transition-duration: 1s;
 }
 
 .linkscorpo:active {
@@ -134,6 +129,7 @@ body {
 .blocoverdin {
     background-color: #C4EBD7;
     border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.075);
 }
 
 .h1bloco {
@@ -147,4 +143,45 @@ body {
 .pbloco {
     padding: 0px 10px;
     padding-bottom: 10px;
+}
+
+nav {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+aside ul {
+    list-style-type: '\✔️\00A0\00A0';
+    columns: 2;
+}
+
+.video {
+    background-color: #1A5A36;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+footer {
+    text-align: center;
+    background-color: #1A5A36;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.671);
+    padding: 0px;
+    margin: 0px;
+
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 0;
 }
